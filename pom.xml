@@ -19,10 +19,10 @@
     <finalName>pipeline</finalName>
   </build>
 <distributionManagement>
-  <site>
+  <repository>
     <id>ponmurugan</id>
     <url>http://localhost:8081/nexus/content/sites/ponmurugan</url>
-  </site>
+  </repository>
 </distributionManagement>
 
 </project>
