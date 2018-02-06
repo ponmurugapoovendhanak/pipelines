@@ -11,7 +11,12 @@ pipeline {
         stage('maven_deploy'){
             steps{
              sh 'mvn deploy'
-                sh 'cp /var/lib/jenkins/workspace/pipelines/target/pipelines.war /etc/tomcat7/Catalina/webapps/
+                
+            }
+        }
+        stage('maven_deploy_tomcat'){
+            steps{
+            sh 'cp /var/lib/jenkins/workspace/pipelines/target/pipelines.war /etc/tomcat7/Catalina/webapps/
            
             }
         }
