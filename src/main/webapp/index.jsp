@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2>A pipeline project</h2>
+<h2>This project is deployed using jenkins and maven on tomcat container</h2>
 </body>
 </html>
