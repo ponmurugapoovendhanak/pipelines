@@ -16,7 +16,7 @@ pipeline {
         }
         stage('maven_deploy_tomcat'){
             steps{
-            sh 'scp -i /var/lib/jenkins/workspace/ganga_key.pem /var/lib/jenkins/workspace/pipelines/target/pipeline.war centos@34.208.231.143:/var/lib/tomcat/webapps/pipeline.war'
+            sh 'scp -i /var/lib/jenkins/ganga_key.pem /var/lib/jenkins/workspace/pipelines/target/pipeline.war centos@34.208.231.143:/var/lib/tomcat/webapps/pipeline.war'
            
             }
         }
